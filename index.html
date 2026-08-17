@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kadly - Checkerr</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="atmosphere" aria-hidden="true"></div>
+    <main class="shell">
+      <header class="brand">
+        <p class="brand__mark">Kadly</p>
+        <h1 class="brand__title">Minecraft name checker.</h1>
+        <p class="brand__lede">
+          Validate format and see if a Minecraft Java username is taken.
+        </p>
+      </header>
+
+      <section class="check" aria-label="Check usernames">
+        <label class="field-label" for="names">Username(s)</label>
+        <textarea
+          id="names"
+          name="names"
+          rows="4"
+          spellcheck="false"
+          autocomplete="off"
+          placeholder="One name, or several — one per line"
+        ></textarea>
+        <div class="actions">
+          <button type="button" id="checkBtn" class="btn">Check names</button>
+          <p class="hint">2–16 chars · letters, numbers, _</p>
+        </div>
+      </section>
+
+      <section id="results" class="results" aria-live="polite" hidden></section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
