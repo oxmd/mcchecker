@@ -1,0 +1,2 @@
+# mcchecker
+Check rare usernames..
